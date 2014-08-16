@@ -8,8 +8,6 @@ var bodyParser = require('body-parser');
 var app = express();
 var server = http.createServer(app);
 
-//app.use(bodyParser());
-//app.use(bodyParser.urlencoded());
 app.use(bodyParser.json());
 
 app.use(function (request, response, next) {
